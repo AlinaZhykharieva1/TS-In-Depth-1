@@ -32,6 +32,14 @@ module.exports = {
         '@typescript-eslint/type-annotation-spacing': 'error',
         'brace-style': ['error', '1tbs'],
         camelcase: 'error',
+        'no-underscore-dangle': [
+            'error',
+            {
+                'allow': [
+                    '_copies',
+                ]
+            }
+        ],
         eqeqeq: ['error', 'smart'],
         'id-blacklist': [
             'error',
@@ -49,7 +57,6 @@ module.exports = {
         'no-eval': 'error',
         'no-redeclare': 'error',
         'no-trailing-spaces': 'error',
-        'no-underscore-dangle': 'error',
         'no-unsafe-finally': 'error',
         'no-var': 'error',
         'spaced-comment': ['error', 'always', { markers: ['/'] }],

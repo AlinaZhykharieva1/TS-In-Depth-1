@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2017",
     "module": "esnext",
     "moduleResolution": "node",
     "sourceMap": true,
@@ -12,8 +12,13 @@
     "strictNullChecks": false,
     "outDir": "./dist",
     "incremental": true,
-    "tsBuildInfoFile": "./buildcache"
-
+    "tsBuildInfoFile": "./buildcache",
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "dom"
+    ]
   },
   "exclude": [
     "node_modules",
